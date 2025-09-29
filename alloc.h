@@ -1,8 +1,8 @@
 // alloc.h
-#ifndef ALLOC H
-#define ALLOC H
+#ifndef ALLOC_H
+#define ALLOC_H
 
-int init alloc();
+int init_alloc();
 int cleanup();
 char* alloc(int size);
 int dealloc(char* ptr);
