@@ -22,7 +22,6 @@ void look(vector<int> requests, int head)
 
     cout << "\nLOOK order: ";
 
-    // Move right
     for (int r : right)
     {
         total += abs(current - r);
@@ -30,7 +29,6 @@ void look(vector<int> requests, int head)
         cout << r << " ";
     }
 
-    // Move left
     reverse(left.begin(), left.end());
     for (int r : left)
     {

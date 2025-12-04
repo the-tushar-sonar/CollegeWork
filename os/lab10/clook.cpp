@@ -22,7 +22,6 @@ void clook(vector<int> requests, int head)
 
     cout << "\nC-LOOK order: ";
 
-    // Move right
     for (int r : right)
     {
         total += abs(current - r);
@@ -30,14 +29,12 @@ void clook(vector<int> requests, int head)
         cout << r << " ";
     }
 
-    // Jump to smallest left request
     if (!left.empty())
     {
         total += abs(current - left[0]);
         current = left[0];
     }
 
-    // Move right again (through left side)
     for (int r : left)
     {
         total += abs(current - r);

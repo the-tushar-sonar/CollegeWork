@@ -22,7 +22,6 @@ void cscan(vector<int> requests, int head, int disk_size)
 
     cout << "\nC-SCAN order: ";
 
-    // Move right
     for (int r : right)
     {
         total += abs(current - r);
@@ -30,7 +29,6 @@ void cscan(vector<int> requests, int head, int disk_size)
         cout << r << " ";
     }
 
-    // Jump to end then to start
     if (!left.empty())
     {
         total += abs((disk_size - 1) - current);
@@ -38,7 +36,6 @@ void cscan(vector<int> requests, int head, int disk_size)
         current = 0;
     }
 
-    // Move right again
     for (int r : left)
     {
         total += abs(current - r);
