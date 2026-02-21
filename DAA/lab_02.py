@@ -13,8 +13,11 @@ class Stack:
         self.stack = []
         self.counter = Counter()
 
-    def create(self):
-        self.stack = []
+    def create(self, elements=None):
+        if elements:
+            self.stack = elements
+        else:
+            self.stack = []
         self.counter.reset()
 
     def insert(self, value):   # push
@@ -51,8 +54,11 @@ class Queue:
         self.queue = []
         self.counter = Counter()
 
-    def create(self):
-        self.queue = []
+    def create(self, elements=None):
+        if elements:
+            self.queue = elements
+        else:
+            self.queue = []
         self.counter.reset()
 
     def insert(self, value):   # enqueue
@@ -96,9 +102,7 @@ def main():
 
     while True:
         print("\n===== DATA STRUCTURE MENU =====")
-        print("1. Stack")
-        print("2. Queue")
-        print("0. Exit")
+        print("0. Exit 1. Stack 2. Queue")
 
         choice = int(input("Enter choice: "))
 
@@ -109,13 +113,7 @@ def main():
         elif choice == 1:
             while True:
                 print("\nSTACK MENU")
-                print("1. Create")
-                print("2. Push")
-                print("3. Pop")
-                print("4. Search")
-                print("5. Update")
-                print("6. Display")
-                print("0. Back")
+                print("1. Create 2. Push 3. Pop 4. Search 5. Update 6. Display 0. Back")
 
                 ch = int(input("Enter choice: "))
 
@@ -123,7 +121,12 @@ def main():
                     break
 
                 elif ch == 1:
-                    stack.create()
+                    data = input("Enter elements: ")
+                    if data.strip():
+                        elements = list(map(int, data.split()))
+                    else:
+                        elements = []
+                    stack.create(elements)
                     print("Stack initialized.")
 
                 elif ch == 2:
@@ -153,13 +156,7 @@ def main():
         elif choice == 2:
             while True:
                 print("\nQUEUE MENU")
-                print("1. Create")
-                print("2. Enqueue")
-                print("3. Dequeue")
-                print("4. Search")
-                print("5. Update")
-                print("6. Display")
-                print("0. Back")
+                print("1. Create 2. Enqueue 3. Dequeue 4. Search 5. Update 6. Display 0. Back")
 
                 ch = int(input("Enter choice: "))
 
@@ -167,7 +164,12 @@ def main():
                     break
 
                 elif ch == 1:
-                    queue.create()
+                    data = input("Enter elements: ")
+                    if data.strip():
+                        elements = list(map(int, data.split()))
+                    else:
+                        elements = []
+                    queue.create(elements)
                     print("Queue initialized.")
 
                 elif ch == 2:
