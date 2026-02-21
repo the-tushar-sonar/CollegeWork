@@ -239,7 +239,7 @@ def main():
     dll = DoublyLinkedList()
 
     while True:
-        print("===== DATA STRUCTURE MENU =====")
+        print("\n===== DATA STRUCTURE MENU =====")
         print("1. Array 2. SLL 3. DLL 0. Exit")
         choice = int(input("Choice: "))
 
@@ -248,7 +248,7 @@ def main():
 
         if choice == 1:
             while True:
-                print("ARRAY: 1. Create 2. Insert 3. Search 4. Delete 5. Update 6. Reverse 7. Display 0. Back")
+                print("\nARRAY: 1. Create 2. Insert 3. Search 4. Delete 5. Update 6. Reverse 7. Display 0. Back")
                 ch = int(input("Choice: "))
                 if ch == 0:
                     break
@@ -277,7 +277,7 @@ def main():
 
         elif choice == 2:
             while True:
-                print("SLL: 1. Create 2. Insert 3. Search 4. Delete 5. Update 6. Reverse 7. Display 0. Back")
+                print("\nSLL: 1. Create 2. Insert 3. Search 4. Delete 5. Update 6. Reverse 7. Display 0. Back")
                 ch = int(input("Choice: "))
                 if ch == 0:
                     break
@@ -302,7 +302,7 @@ def main():
 
         elif choice == 3:
             while True:
-                print("DLL: 1. Create 2. Insert 3. Search 4. Delete 5. Update 6. Reverse 7. Display 0. Back")
+                print("\nDLL: 1. Create 2. Insert 3. Search 4. Delete 5. Update 6. Reverse 7. Display 0. Back")
                 ch = int(input("Choice: "))
                 if ch == 0:
                     break
