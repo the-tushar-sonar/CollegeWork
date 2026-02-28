@@ -102,7 +102,7 @@ def main():
 
     while True:
         print("\n===== DATA STRUCTURE MENU =====")
-        print("0. Exit 1. Stack 2. Queue")
+        print("1. Stack 2. Queue 0. Exit")
 
         choice = int(input("Enter choice: "))
 
