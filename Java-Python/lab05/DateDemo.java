@@ -1,4 +1,3 @@
-// Lab 5: Demonstrate LocalDate vs LocalDateTime and calculate days difference
 package lab05;
 
 import java.time.LocalDate;
