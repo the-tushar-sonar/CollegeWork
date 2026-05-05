@@ -1,4 +1,3 @@
-// Lab 4: Demonstrate Lambda expressions, Optional and Stream operations in Java
 package lab04;
 
 import java.util.*;
